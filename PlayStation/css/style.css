@@ -1,0 +1,199 @@
+/* Solo si para páginas fullscreen sin barra de desplamiento */
+html, body {
+    height: 100%;
+}
+
+/* Definición de la fuente local */
+@font-face {
+    font-family: "sst";
+    src: url(../font/SST-Light.woff2);
+}
+
+/* Tamaño de la caja de borde a borde 
+padding y borde no modifica el tamaño del elemento */
+* {
+    box-sizing: border-box;
+}
+
+/* Reglas comunes a todos los elementos en body 
+margin:0 para quitar ese pequeño enmarcado blanco indeseable */
+body {
+    margin: 0;
+    font-family: "sst";
+    color: black;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 10px;
+    height: 5%;
+}
+
+main {
+
+    height: 95%;
+}
+
+footer {
+    padding: 10px;  
+}
+
+/* flex orientación row */
+.row {
+    display: flex;
+}
+/* flex orientación column */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Alineación eje principal center */
+.justify-content-center {
+    justify-content: center;
+}
+
+/* Alineación eje principal space beetween 
+si row = 1º y ultimo en izq y der resto reparten espacio
+si column =  1º y ultimo en arriba y abajo resto reparten espacio */
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* Alineación eje principal end
+si row = derecha
+si column = abajo */
+.justify-content-end {
+    justify-content: end;
+}
+
+/* Alineación eje secundario center 
+si row = centrado verticalmente
+si column = centrado horizontalmente */
+.align-items-center {
+    align-items: center;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* Flotación */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* limpiar flotación */
+.cb {
+    clear: both;
+}
+
+/* Position */
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+/* Alineación del Texto centro */
+.text-center {
+    text-align: center;
+}
+
+/* Alineación del Texto derecha */
+.text-end {
+    text-align: right;
+}
+
+/* Fondo y texto negro y blanco */
+.bg-dark {
+    background-color: black;
+}
+
+.text-dark {
+    color: black;
+}
+
+.bg-light {
+    background-color: rgba(255, 255, 255, 0.913);
+}
+
+.text-light {
+    color: white;
+}
+
+/* Reglas comunes botones */
+.btn {
+    border: 0;
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Reglas específicas botón azul */
+.btn-blue {
+    background-color: #304a70;
+    color: #a8a8ab;
+    border: 0;
+}
+.btn-grey {
+    background-color: #e6e6e9;
+    color: #066bbe;
+    border: 0;
+}
+
+/* Reglas para las cajas de formularios */
+.box-form {
+    border: 0;
+    background-color: #e6e7e8;
+    width: 70%;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.container{
+   justify-content: center;
+   align-items: center;
+}
+.float-right{
+    margin-right: 8px;
+}
+
+.m-2{
+    margin: 8px;
+}
+input{
+    width: 100%;
+}
+a{
+    text-decoration:none;
+    color:#0068bd;
+    font-size:16px;
+    font-weight:bold;
+
+}
+p{
+    padding:8px;
+ margin-bottom:15px;
+}
